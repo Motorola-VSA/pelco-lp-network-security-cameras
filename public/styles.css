@@ -1,5 +1,5 @@
 /*
-! tailwindcss v3.1.8 | MIT License | https://tailwindcss.com
+! tailwindcss v3.2.3 | MIT License | https://tailwindcss.com
 */
 
 /*
@@ -30,6 +30,7 @@
 2. Prevent adjustments of font size after orientation changes in iOS.
 3. Use a more readable tab size.
 4. Use the user's configured `sans` font-family by default.
+5. Use the user's configured `sans` font-feature-settings by default.
 */
 
 html {
@@ -44,6 +45,8 @@ html {
   /* 3 */
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "Noto Sans", sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   /* 4 */
+  font-feature-settings: normal;
+  /* 5 */
 }
 
 /*
@@ -408,6 +411,12 @@ img,
 video {
   max-width: 100%;
   height: auto;
+}
+
+/* Make elements with the HTML hidden attribute stay hidden by default */
+
+[hidden] {
+  display: none;
 }
 
 [type='text'],[type='email'],[type='url'],[type='password'],[type='number'],[type='date'],[type='datetime-local'],[type='month'],[type='search'],[type='tel'],[type='time'],[type='week'],[multiple],textarea,select {
@@ -797,16 +806,16 @@ html {
   margin-top: 4rem;
 }
 
-.mt-4 {
-  margin-top: 1rem;
-}
-
 .mt-5 {
   margin-top: 1.25rem;
 }
 
 .mt-1 {
   margin-top: 0.25rem;
+}
+
+.mt-4 {
+  margin-top: 1rem;
 }
 
 .mt-2 {
@@ -1167,10 +1176,6 @@ html {
   --tw-bg-opacity: 0.5;
 }
 
-.bg-marquee-mobile {
-  background-image: url('https://3396890.fs1.hubspotusercontent-na1.net/hubfs/3396890/Pelco/Landing%20Pages/Fixed/Prospecting/1.%20Web%20Landing%20Page%20420x576%20Fixed%20Prospecting%20Network.jpg');
-}
-
 .bg-cover {
   background-size: cover;
 }
@@ -1362,6 +1367,10 @@ html {
 
 .font-extrabold {
   font-weight: 800;
+}
+
+.font-normal {
+  font-weight: 400;
 }
 
 .tracking-tight {
@@ -1602,11 +1611,6 @@ html {
 }
 
 @media (min-width: 768px) {
-  .md\:bgGradient-desktop {
-    background: rgb(255,255,255);
-    background: linear-gradient(90deg, rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%);
-  }
-
   .md\:col-span-4 {
     grid-column: span 4 / span 4;
   }
@@ -1618,6 +1622,11 @@ html {
 
   .md\:mt-0 {
     margin-top: 0px;
+  }
+
+  .md\:bgGradient-desktop {
+    background: rgb(255,255,255);
+    background: linear-gradient(90deg, rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%);
   }
 
   .md\:grid {
@@ -1684,10 +1693,6 @@ html {
     --tw-space-x-reverse: 0;
     margin-right: calc(2rem * var(--tw-space-x-reverse));
     margin-left: calc(2rem * calc(1 - var(--tw-space-x-reverse)));
-  }
-
-  .md\:bg-marquee-desktop {
-    background-image: url('https://3396890.fs1.hubspotusercontent-na1.net/hubfs/3396890/Pelco/Landing%20Pages/Fixed/Prospecting/1.%20Web%20Landing%20Page%201440x600%20Fixed%20Prospecting%20Network.jpg');
   }
 
   .md\:px-6 {
