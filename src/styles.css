@@ -25,4 +25,31 @@
     background: rgb(255,255,255);
     background: linear-gradient(90deg, rgba(255,255,255,1) 40%, rgba(255,255,255,0) 100%);  
   }
+  #hsForm > form > fieldset > div > div > input {
+    border-radius: 8px;
+    margin: 5px;
+    width: 100%;
+  }
+  /* #hsForm div.input input {
+    border-radius: 8px;
+    margin: 5px;
+    width: 100%;
+  } */
+  #hsForm input.hs-input {
+    margin: 5px !important;
+  }
+  #hsForm fieldset ul > li > label {
+    color: white;
+    margin-left: 10px;
+    display: block;
+  }
+  input.hs-button.primary.large {
+    background-color: #00729D;
+    /* width: 100%; */
+    color: white;
+    padding: 10px 32px;
+    margin: 5px auto;
+    border-radius: 8px;
+    display: block;
+  }
 }
